@@ -8,6 +8,9 @@ import DefaultHOC from "./HOC/DefaultHOC";
 // Test
 import Temp from "./components/Temp";
 
+// Layout
+import DefaultLayout from "./layouts/DefaultLayout";
+
 // function Name() {
 //   return <h1>Home Page</h1>;
 // }
@@ -20,9 +23,7 @@ function App() {
   return (
     <>
       <Routes>
-        {/* <Route path="/"  element={<Name/>} />
-        <Route path="/movies"  element={<Name2/>} /> */}
-        <Route DefaultHOC path="/" component={Temp}/>
+      <Route DefaultHOC path="/" element={<DefaultLayout><Temp /></DefaultLayout>} />
       </Routes>
     </>
   );
