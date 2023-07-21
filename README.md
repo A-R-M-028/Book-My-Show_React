@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+<!-- Sure! Here's a summarized explanation of `index.js` and `App.js` in a React application:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npx create-react-app my-app
+cd my-app
+npm start
 
-## Available Scripts
+N:B -> It is not needed to import react in every file after v17
 
-In the project directory, you can run:
+`index.js` -> is the entry point that initiates the React application and renders the root component (`App.js`) into the HTML page. 
 
-### `npm start`
+`App.js` ->on the other hand, defines the main layout and structure of the application, including common components and routing. Both files work together to set up and provide the foundation for your React application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Higher Order Components -> Transform components into another components, 
+                        -> Adding additional functionalities to the existing components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React routing -> For not reloading -> npm pack -> react-router-dom
+              -> To implement HOC need react router dom 
 
-### `npm test`
+Icons -> Fafa icon, cheveron icon
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- 
 
-### Code Splitting
+Folder -> lower case
+Function -> Uppder case
+File -> Upper case
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Components are like building blocks of a website.
+This is like brick of a house
 
-### Analyzing the Bundle Size
+We use functional components.
+Class components no more used today.
+Props -> Properties / parameters -> Data which passed to 1 component to another component
+State -> Set the data that individual component holds
+# Lifecycle -> Workflow
+1. Mount -> The components is initially rendered in dom
+    a. Constructor
+    b. Render
+    c. componenentDidMount e.g -> Sideeffects -> explore, activities, links
+O/P ->  Constructor called 2 user.js:82
+        Rendered called 2 user.js:88
+        ComponentDidMount called
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Update -> The components is being updated
+    a. Constructor
+    b. shouldComponentUpdate(nextProp, nextState)
+        O/P -> True / False
+    c. Render
+    d. getSnapshotBeforeUpdate(nextProp, nextState)
+        O/P -> True / False
+    e. componenentDidUpdate e.g -> 
+3. Unmount -> The components is removed from the dom / dies, Will unmount
 
-### Making a Progressive Web App
+# Hooks 
+-> It makes use state in func component also which was prev use only in class comp
+ -> State -> React 16 -> Hooks (Power to func comp) -> 
+ useState()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Masters in functional component
+but dont forget class component
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->
