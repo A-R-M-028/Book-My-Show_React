@@ -1,6 +1,6 @@
 // This is pascal case not camel case
 import { Route } from "react-router-dom";
-import Temp from "../components/Temp";
+
 
 const DefaultLayout = (props) => {
   return (
