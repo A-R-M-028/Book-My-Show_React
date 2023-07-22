@@ -1,11 +1,12 @@
 // This is pascal case not camel case
 import { Route } from "react-router-dom";
+import Navbar from "../components/Navbar/NavbarComonent";
 
 
 const DefaultLayout = (props) => {
   return (
     <>
-      <h1 className="text-xl">DefaultLayout Page</h1>
+      <Navbar/>
       {props.children}
     </>
   );

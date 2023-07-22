@@ -1,10 +1,10 @@
 import { Route } from "react-router-dom";
 import DefaultLayout from "../layouts/DefaultLayout";
 
-const DefaultHOC = ({ component: Component, ...rest }) => {
+const DefaultHOC = ({ component: Component, ...props }) => {
   return (
     <Route
-      {...rest}
+      {...props}
       element={
         <DefaultLayout>
           <Component />
