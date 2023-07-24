@@ -1,6 +1,6 @@
 // This is pascal case not camel case
 import { Route } from "react-router-dom";
-import Navbar from "../components/Navbar/NavbarComonent";
+import Navbar from "../components/Navbar/Navbar";
 import HeroCarousal from "../components/HeroCarousal/HeroCarousal";
 
 
