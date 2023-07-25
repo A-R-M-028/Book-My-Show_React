@@ -1,77 +1,16 @@
 // Import
 import Slider from "react-slick";
+// Component
 import Poster from "../components/Poster/Poster";
+// Import from config -> Settings
+import settings from "../components/Config/PosterCarousal";
+// Import from config -> Dataset
+import PremierImages from "../components/Config/PosterTemp";
 
 export const Premier = () => {
-  const settings = {
-    infinite: true,
-    autoplay: false,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // Setting moved to config
 
-  //   Create a Dataset
-  const PremierImages = [
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-    {
-      src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA4M0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg",
-      alt: "Mission Impossible: Dead Reckoning - Part One",
-      title: "Mission Impossible: Dead Reckoning - Part One",
-      subtitle: " Action, Adventure,Thriller",
-    },
-  ];
+  // Premiere Images moved to config
 
   return (
     // { ...image} -> This is for 1 iamge and it's property to Poster
