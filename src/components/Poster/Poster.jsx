@@ -1,4 +1,4 @@
-// props -> src, title, subtitle, isDark(bool)
+// components/Poster/Poster.js
 export const Poster = (props) => {
   return (
     <>
@@ -7,16 +7,16 @@ export const Poster = (props) => {
         {/* Parent */}
         <div className="h-80">
           {/* Image */}
-          <img src={props.src} className="w-full h-full rounded-xl"/>
+          <img src={props.src} className="w-full h-full rounded-xl" />
         </div>
-        <div className={'${props.isDark? "text-white": "text-gray-700"}'}>
-          <h3 className="text-lg font-bold ">{props.title}</h3>
-          <p className="text-sm font-bold ">{props.subtitle}</p>
+        {/* Backtick is important here */}
+        <div className={`${props.isDark ? "text-white" : "text-gray-700"}`}> 
+          <h3 className="text-lg font-bold">{props.title}</h3>
+          <p className="text-sm font-bold">{props.subtitle}</p>
         </div>
       </div>
     </>
   );
 };
-
 
 export default Poster;
