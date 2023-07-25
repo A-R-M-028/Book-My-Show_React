@@ -39,7 +39,7 @@ const HomePage = () => {
             />
           </h1>
         </div>
-
+        {/* Just reuse code copy - paste */}
         <div className="container mx-auto px-8">
           <h1>
             <PosterSlider
