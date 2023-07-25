@@ -4,12 +4,12 @@
 
 /* This are predefined package in slick package  */
 .slick-prev {
-  left: 3% !important;
+  left: 5% !important;
   /* !important -> Override and it is important */
   z-index: 1;
 }
 
 .slick-next {
-  right: 3% !important;
+  right: 5% !important;
   z-index: 1;
 }

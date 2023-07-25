@@ -1,5 +1,5 @@
 export const NextArrow = (Props) => {
-  // const {className, style, onClick} =  props
+  // props -> {className, style, onClick} =  props
   return (
     <>
       <div
@@ -18,7 +18,7 @@ export const PrevArrow = (Props) => {
       <div
         className={Props.className}
         onClick={Props.onClick}
-        style={{ ...Props.style, backgroundColor: "black" }}
+        style={{ ...Props.style, backgroundColor: "black", }}
       />
     </>
   );
