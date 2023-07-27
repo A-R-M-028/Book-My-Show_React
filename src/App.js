@@ -13,6 +13,7 @@ import MovieHOC from "./HOC/MovieHOC";
 // Pages
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
+import Plays from "./pages/Plays";
 
 // Layout
 import DefaultLayout from "./layouts/DefaultLayout";
@@ -24,6 +25,7 @@ function App() {
       <Routes>
       <Route DefaultHOC path="/" element={<DefaultLayout><HomePage /></DefaultLayout>} />
       <Route MovieHOC path="/movie/:id" element={<MovieLayout><MoviePage /></MovieLayout>} />
+      <Route MovieHOC path="/plays/:id" element={<MovieLayout><Plays /></MovieLayout>} />
       </Routes>
     </>
   );
