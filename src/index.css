@@ -13,3 +13,10 @@
   right: 5% !important;
   z-index: 1;
 }
+
+.bg-slate-200 {
+  width: 60%;
+  max-width: 60%;
+  padding: 1rem;
+}
+
