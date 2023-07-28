@@ -19,6 +19,7 @@ import Plays from "./pages/Plays";
 import DefaultLayout from "./layouts/DefaultLayout";
 import MovieLayout from "./layouts/MovieLayout";
 
+// 
 function App() {
   return (
     <>
