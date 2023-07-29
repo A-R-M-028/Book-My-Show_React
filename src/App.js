@@ -13,7 +13,7 @@ import MovieHOC from "./HOC/MovieHOC";
 // Pages
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
-import Plays from "./pages/Plays";
+import Plays from "./pages/PlaysPage";
 
 // Layout
 import DefaultLayout from "./layouts/DefaultLayout";

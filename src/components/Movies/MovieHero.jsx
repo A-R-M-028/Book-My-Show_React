@@ -64,7 +64,7 @@ export default function MovieHero() {
                 </div>
                 <div>
                   <button
-                    className="bg-green-500 text-black rounded-lg font-bold w-40 h-12"
+                    className="bg-green-500 text-black rounded-lg font-bold w-40 h-12 hover:text-white"
                     href="#"
                   >
                     Rate Now
@@ -83,7 +83,7 @@ export default function MovieHero() {
                 2h 45m • Action , Adventure , Thriller • UA • 12 Jul, 2023
               </p>
               <button
-                className="bg-red-500 text-black font-bold rounded-full w-full py-2"
+                className="bg-red-500 text-black font-bold rounded-full w-full py-2 hover:text-white"
                 href="#"
               >
                 Book Ticket

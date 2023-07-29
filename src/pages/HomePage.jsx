@@ -42,6 +42,7 @@ const HomePage = () => {
         {/* Just reuse code copy - paste */}
         <div className="container mx-auto px-8">
           <h1>
+          {/* Outdoor Events */}
             <PosterSlider
               images={PosterTemp}
               title="Outdoors Events"

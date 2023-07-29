@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { BiChevronUp, BiChevronDown } from "react-icons/bi";
-
+// Using Heasdless UI (Tailwind)
 const PlaysFilter = (props) => {
   return (
     <Disclosure>
@@ -15,7 +15,10 @@ const PlaysFilter = (props) => {
           <Disclosure.Panel className="p-4 text-red-600">
             <div>
               {props.tags.map((tag, index) => (
-                <span key={index} className="mr-2 border rounded-full bg-white px-3 py-2">
+                <span
+                  key={index}
+                  className="mr-2 border rounded-full bg-white px-3 py-2"
+                >
                   {tag}
                 </span>
               ))}
