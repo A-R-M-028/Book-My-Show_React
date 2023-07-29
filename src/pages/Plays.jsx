@@ -53,17 +53,28 @@ export default function Plays() {
             <h2 className="text-2xl font-bold mb-4">Filters</h2>
             <div>
               <PlaysFilter
-                title="Do you offer technical support?"
+                title="Date"
                 tags={["Today", "Tomorrow", "This Weekend"]}
               />
               <PlaysFilter
-                title="Do you offer technical support?"
-                tags={["Today", "Tomorrow", "This Weekend"]}
+                title="Language"
+                tags={["Bengali", "Hindi", "Hindustani"]}
+              />
+              <PlaysFilter title="Categories" tags={["Theatre"]} />
+              <PlaysFilter title="Genres" tags={["Drama"]} />
+              <PlaysFilter
+                title="More Filters"
+                tags={["Outdoor Events", "Fast Filling"]}
               />
               <PlaysFilter
-                title="Do you offer technical support?"
-                tags={["Today", "Tomorrow", "This Weekend"]}
+                title="Price"
+                tags={["Free", "0 - 500", "501 - 2000", "Above 2000"]}
               />
+            </div>
+            <div className="w-full flex items-center mb-3 py-3 px-3">
+              <button className="w-full block border border-red-600 bg-red-100 hover:bg-red-200 text-red-600 font-semibold py-2 px-4 rounded-lg">
+                Browse By Venues
+              </button>
             </div>
           </div>
         </div>
