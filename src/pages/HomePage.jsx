@@ -26,7 +26,7 @@ const HomePage = () => {
             <PosterSlider
               images={PosterTemp}
               title="Premiere"
-              subtitle="Brand New Release Every Friday"
+              subtitle="Brand New Release Every Friday" isDark={true}
             />
           </div>
         </div>

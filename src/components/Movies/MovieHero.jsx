@@ -9,7 +9,6 @@ export default function MovieHero() {
           src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/mission-impossible-dead-reckoning--part-one-et00329481-1688284554.jpg"
           alt="Poster"
         />
-        <h1>S</h1>
       </div>
       <div className="hidden md:block lg:hidden">
         {/* Medium Screen */}
@@ -17,7 +16,6 @@ export default function MovieHero() {
           src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/mission-impossible-dead-reckoning--part-one-et00329481-1688284554.jpg"
           alt="Poster"
         />
-        <h1>M</h1>
       </div>
       <div className="hidden lg:block relative" style={{ height: "40rem" }}>
         {/* Big Screen */}
@@ -98,7 +96,6 @@ export default function MovieHero() {
           className="w-full"
           style={{ height: "40rem" }}
         />
-        <h1>L</h1>
       </div>
     </>
   );
