@@ -71,4 +71,8 @@ O/P ->  Constructor called 2 user.js:82
 Masters in functional component
 but dont forget class component
 
+<!-- 
+axios
+Package for api flexibility -> axios Globally fetch the data 1 time not every time--> 
+
  -->
