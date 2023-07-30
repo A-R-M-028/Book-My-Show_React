@@ -1,4 +1,5 @@
 import { BsFillStarFill } from "react-icons/bs";
+import Razorpay from "./Razorpay";
 
 export default function MovieHero() {
   return (
@@ -81,8 +82,8 @@ export default function MovieHero() {
                 2h 45m • Action , Adventure , Thriller • UA • 12 Jul, 2023
               </p>
               <button
+                onClick={Razorpay}
                 className="bg-red-500 text-black font-bold rounded-full w-full py-2 hover:text-white"
-                href="#"
               >
                 Book Ticket
               </button>
