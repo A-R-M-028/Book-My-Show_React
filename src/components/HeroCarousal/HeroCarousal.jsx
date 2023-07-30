@@ -62,6 +62,7 @@ const HeroCarousal = () => {
       try {
         const getImages = await axios.get("/movie/now_playing");
         console.log(getImages);
+        setImages(getImages.data.results);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -77,7 +78,8 @@ const HeroCarousal = () => {
           {images.map((image) => (
             <div className="w-full h-96 px-2 py-3">
               <img
-                src={image}
+                // src={image}
+                src = {`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
                 alt="Testing"
                 className="w-full h-full rounded-md"
               />
@@ -92,7 +94,8 @@ const HeroCarousal = () => {
           {images.map((image) => (
             <div className="w-full h-64 md:h-80 py-3">
               <img
-                src={image}
+                // src={image}
+                src = {`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
                 alt="Testing"
                 className="w-full h-full rounded-md"
               />

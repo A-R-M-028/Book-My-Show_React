@@ -3,7 +3,22 @@ import { Premier } from "../Premiere/Premiere";
 import PosterSlider from "../components/PosterSlider/PosterSlider";
 import PosterTemp from "../components/Config/PosterTemp";
 
+// for tmdb
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 const HomePage = () => {
+  // Tmdb
+  const [popularMovies, setPopularMovies] = useState([]);
+
+  useEffect(() => {
+    const requestPopularMovies = async () => {
+      const getPopularMovies = await axios.get("/movie/popular");
+      setPopularMovies(getPopularMovies.data.results);
+    };
+    requestPopularMovies();
+  }, []);
+  console.log(popularMovies)
   return (
     <>
       <div className="flex flex-col gap-10">
@@ -24,16 +39,19 @@ const HomePage = () => {
             </div>
             {/* <Premier /> -> Replaced Dynamically (Common Now)*/}
             <PosterSlider
-              images={PosterTemp}
+              // images={PosterTemp}
+              images={popularMovies}
               title="Premiere"
-              subtitle="Brand New Release Every Friday" isDark={true}
+              subtitle="Brand New Release Every Friday"
+              isDark={true}
             />
           </div>
         </div>
         <div className="container mx-auto px-8">
           <h1>
             <PosterSlider
-              images={PosterTemp}
+              // images={PosterTemp}
+              images={popularMovies}
               title="Online Streaming Events"
               isDark={false}
             />
@@ -42,9 +60,10 @@ const HomePage = () => {
         {/* Just reuse code copy - paste */}
         <div className="container mx-auto px-8">
           <h1>
-          {/* Outdoor Events */}
+            {/* Outdoor Events */}
             <PosterSlider
-              images={PosterTemp}
+              // images={PosterTemp}
+              images={popularMovies}
               title="Outdoors Events"
               isDark={false}
             />
