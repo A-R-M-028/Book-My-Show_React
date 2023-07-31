@@ -18,7 +18,22 @@ const HomePage = () => {
     };
     requestPopularMovies();
   }, []);
-  console.log(popularMovies)
+  console.log(popularMovies);
+
+  // Tmdb
+  // Upcoming Movies 
+
+  const [upcomingMovies, setUpcomingMovies] = useState([]);
+
+  useEffect(() => {
+    const requestUpcomingMovies = async () => {
+      const getUpcomingMovies = await axios.get("/movie/upcoming");
+      setUpcomingMovies(getUpcomingMovies.data.results);
+    };
+    requestUpcomingMovies();
+  }, []);
+  console.log(upcomingMovies);
+
   return (
     <>
       <div className="flex flex-col gap-10">
@@ -38,7 +53,7 @@ const HomePage = () => {
               />
             </div>
             {/* <Premier /> -> Replaced Dynamically (Common Now)*/}
-            <PosterSlider
+            <PosterSlider 
               // images={PosterTemp}
               images={popularMovies}
               title="Premiere"
@@ -51,8 +66,9 @@ const HomePage = () => {
           <h1>
             <PosterSlider
               // images={PosterTemp}
-              images={popularMovies}
-              title="Online Streaming Events"
+              images={upcomingMovies}
+              title="Upcoming Online Streaming"
+              subtitle="Brand New Release Every Friday"
               isDark={false}
             />
           </h1>
@@ -65,6 +81,7 @@ const HomePage = () => {
               // images={PosterTemp}
               images={popularMovies}
               title="Outdoors Events"
+              subtitle="Brand New Release Every Friday"
               isDark={false}
             />
           </h1>

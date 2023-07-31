@@ -23,8 +23,8 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import MovieLayout from "./layouts/MovieLayout";
 
 // axios default setting
-axios.defaults.baseURL = 'https://api.themoviedb.org/3';
-axios.defaults.params = {};
+axios.defaults.baseURL = 'https://api.themoviedb.org/3'; //Base url
+axios.defaults.params = {}; // !st axios is empty
 axios.defaults.params['api_key'] = process.env.REACT_APP_API_KEY;
 
 

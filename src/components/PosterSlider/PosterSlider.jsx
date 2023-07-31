@@ -17,7 +17,7 @@ const PosterSlider = (props) => {
       </div>
       <Slider {...settings}>
         {props.images.map((image) => (
-          <Poster {...image} isDark={true} /> // By default is True -> bool
+          <Poster {...image} isDark={props.isDark} /> // By default is True -> bool
         ))}
       </Slider>
     </>
