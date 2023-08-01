@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BiChevronRight, BiChevronDown, BiMenu } from "react-icons/bi";
 import { BsSearchHeartFill } from "react-icons/bs";
+
 
 const NavSm = () => {
   return (
@@ -66,7 +67,7 @@ const NavLg = () => {
             </button>
           </div>
           <div className="w-8 h-8">
-            <BiMenu className="w-full h-full text-gray-400" />
+            <BiMenu className="w-full h-full text-gray-400 cursor-pointer" />
           </div>
         </div>
       </div>

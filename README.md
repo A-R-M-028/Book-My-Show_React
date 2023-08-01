@@ -73,6 +73,6 @@ but dont forget class component
 
 <!-- 
 axios
-Package for api flexibility -> axios Globally fetch the data 1 time not every time--> 
+Package for api flexibility -> axios Globally fetch the data 1 time not every time --> 
 
- -->
+
