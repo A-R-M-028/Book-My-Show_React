@@ -1,6 +1,3 @@
-![Screenshot (525)](https://github.com/A-R-M-028/Book-My-Show_React/assets/108628536/b5163e94-07db-4e2d-a5f4-e17c30ed071d)
-![Uploading Screenshot (524).png…]()
-![Uploading Screenshot (523).png…]()
 
 <!-- Sure! Here's a summarized explanation of `index.js` and `App.js` in a React application:
 
@@ -79,9 +76,3 @@ but dont forget class component
 axios
 Package for api flexibility -> axios Globally fetch the data 1 time not every time 
 --> 
-
-
-
-![Uploading Screenshot (522).png…]()
-![Uploading Screenshot (526).png…]()
-
