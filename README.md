@@ -1,3 +1,6 @@
+![Screenshot (525)](https://github.com/A-R-M-028/Book-My-Show_React/assets/108628536/f81d940a-b3cb-498b-b84f-3d571556c65e)
+![Uploading Screenshot (524).png…]()
+![Uploading Screenshot (523).png…]()
 <!-- Sure! Here's a summarized explanation of `index.js` and `App.js` in a React application:
 
 npx create-react-app my-app
@@ -71,8 +74,14 @@ O/P ->  Constructor called 2 user.js:82
 Masters in functional component
 but dont forget class component
 
+
+![Uploading Screenshot (522).png…]()
+![Uploading Screenshot (526).png…]()
+
+
 <!-- 
 axios
-Package for api flexibility -> axios Globally fetch the data 1 time not every time --> 
+Package for api flexibility -> axios Globally fetch the data 1 time not every time 
+--> 
 
 
